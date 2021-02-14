@@ -25,6 +25,6 @@ public class Rectangle {
     }
 
     public double areaRectangle() {
-        return ((lowerRightCorner.getX() - upperLeftCorner.getX())-(upperLeftCorner.getY()-lowerRightCorner.getY()));
+        return ((lowerRightCorner.getX() - upperLeftCorner.getX())*(upperLeftCorner.getY()-lowerRightCorner.getY()));
     }
 }
