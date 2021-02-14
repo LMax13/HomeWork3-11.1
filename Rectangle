@@ -1,0 +1,30 @@
+package com.dmdev.oop.homework;
+
+/**
+ * Используя класс точки, создать класс Rectangle, описывающий прямоугольник.
+ * В нём хранятся два поля типа Point - координаты левого верхнего и правого нижнего углов.
+ * Создать следующие методы в классе Rectangle:
+ * - Высчитывающий площадь прямоугольника
+ * - Высчитывающий длину диагонали
+ * <p>
+ * Написать тестовый класс с методом main программу, демонстрирующим создание объекта класса Rectangle
+ * и применение вышеперечисленных методов
+ */
+public class Rectangle {
+
+    private Point upperLeftCorner;
+    private Point lowerRightCorner;
+
+    public Rectangle(Point upperLeftCorner, Point lowerRightCorner) {
+        this.upperLeftCorner = upperLeftCorner;
+        this.lowerRightCorner = lowerRightCorner;
+    }
+//Решение подсмотрено:
+    public double getDiagonal() {
+        return upperLeftCorner.distance(lowerRightCorner);
+    }
+
+    public double areaRectangle() {
+        return ((lowerRightCorner.getX() - upperLeftCorner.getX())-(upperLeftCorner.getY()-lowerRightCorner.getY()));
+    }
+}
