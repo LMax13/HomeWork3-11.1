@@ -1,0 +1,17 @@
+package com.dmdev.oop.homework;
+
+public class RectangleRunner {
+
+    public static void main(String[] args) {
+
+        Point point1 = new Point(22,12);
+        Point point2 = new Point(10,17);
+
+        System.out.println(point1.distance(point2));
+        System.out.println(point2.distance(point1));
+// Тут тоже не понял: 
+        Rectangle rectangle = new Rectangle(point1, point2);
+        System.out.println(rectangle.areaRectangle());
+        System.out.println(rectangle.getDiagonal());
+    }
+}
